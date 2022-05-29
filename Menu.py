@@ -1,13 +1,8 @@
-import os
-
-def clear(): os.system('cls') #on Windows System
-clear()
-
 def option3():
     #do something
     print('updating ticket')
 
-
+# how can I make a reuseable menu 
 def menu():
     answer = int(input("1.add ticket \n2.cancel ticket \n3.update ticket\n"))
     match answer:
@@ -19,9 +14,13 @@ def menu():
             option3()
         case _ :
             print(f'invalid number option:{answer}')
-            clear()
             menu()
             
+            
 
-print
+print("hello")
 menu()
+ 
+class MyMenu:
+    # have like a state management 
+    pass
